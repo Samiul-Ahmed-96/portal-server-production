@@ -46,7 +46,7 @@ const upload = multer({ storage });
 // Middlewares
 
 app.use(cors({
-  origin: process.env.ORIGIN, 
+  origin: process.env.ORIGIN || "*", // Fallback to "*" for testing
   credentials: true, 
 }));
 

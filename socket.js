@@ -20,7 +20,7 @@ const setupSocket = async (server) => {
 
   const io = new SocketIOServer(server, {
     cors: {
-      origin: process.env.ORIGIN,
+      origin: process.env.ORIGIN || "*", // Fallback to "*" for testing
       methods: ["GET", "POST"],
       credentials: true, 
     },
