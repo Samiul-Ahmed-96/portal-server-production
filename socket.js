@@ -2,6 +2,7 @@
 import dotenv from "dotenv";
 import { MongoClient, ObjectId } from "mongodb";
 import { Server as SocketIOServer } from "socket.io";
+
 dotenv.config();
 
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clusterunidevgo.2nk4dzo.mongodb.net/?retryWrites=true`;
@@ -18,11 +19,12 @@ const setupSocket = async (server) => {
     return;
   }
 
+  // Set CORS options
   const io = new SocketIOServer(server, {
     cors: {
-      origin: process.env.ORIGIN || "*", // Fallback to "*" for testing
+      origin: process.env.ORIGIN, // Set to your client app URL (e.g., http://localhost:5173 for local)
       methods: ["GET", "POST"],
-      credentials: true, 
+      credentials: true, // Allow credentials
     },
   });
 
@@ -66,7 +68,7 @@ const setupSocket = async (server) => {
 
         const newMessage = {
           sender: new ObjectId(message.sender),
-          senderName : message.senderName,
+          senderName: message.senderName,
           recipient: message.recipient ? new ObjectId(message.recipient) : null,
           messageType: message.messageType,
           content: message.content || null,
@@ -91,18 +93,17 @@ const setupSocket = async (server) => {
           })
           .sort({ timestamp: 1 })
           .toArray();
-      
 
         const recipientSocketId = userSocketMap.get(message.recipient);
         const senderSocketId = userSocketMap.get(message.sender);
 
         if (recipientSocketId) {
-          console.log("recipientSocketId",recipientSocketId);
+          console.log("recipientSocketId", recipientSocketId);
           io.to(recipientSocketId).emit("receiveMessage", updatedMessages);
         }
 
         if (senderSocketId) {
-          console.log("senderSocketId",senderSocketId);
+          console.log("senderSocketId", senderSocketId);
           io.to(senderSocketId).emit("receiveMessage", updatedMessages);
         }
       } catch (error) {
@@ -111,7 +112,7 @@ const setupSocket = async (server) => {
     });
 
     // Call a user
-    socket.on("callUser", ({from }) => {
+    socket.on("callUser", ({ from }) => {
       io.emit("caller", { from });
     });
 
