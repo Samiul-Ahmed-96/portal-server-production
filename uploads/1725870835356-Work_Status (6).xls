@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head >
+  <body>
+    
+    <table>
+      <thead>
+        <tr><th><b>TASK</b></th><th><b>DATE</b></th><th><b>HOURS</b></th><th><b>STATUS</b></th><th><b>DESCRIPTION</b></th><th><b>NAME</b></th><th><b>TOTAL WORK HOURS</b></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Progress Report</td><td>2024-09-04</td><td>8</td><td>complete</td><td>reserwrwerwerwr</td><td>Spiderman</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-07-31</td><td>7.2</td><td>complete</td><td>Search from thousands of royalty-free Batman stock images and video for your next project. Download royalty-free stock photos, vectors, HD footage and more</td><td>Spiderman</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td>15.2</td></tr>
+      </tbody>
+    </table>
+  
+  </body>
+</html >

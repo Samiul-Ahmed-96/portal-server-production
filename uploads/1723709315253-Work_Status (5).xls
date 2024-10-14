@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head >
+  <body>
+    
+    <table>
+      <thead>
+        <tr><th><b>TASK</b></th><th><b>DATE</b></th><th><b>HOURS</b></th><th><b>STATUS</b></th><th><b>DESCRIPTION</b></th><th><b>NAME</b></th><th><b>TOTAL WORK HOURS</b></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Progress Report</td><td>2024-04-19</td><td>8</td><td>in progress</td><td>**Achievementssss:**
+
+- Update and modify homepage.
+- Modify single product page added accordian for product details and reviews.
+- Working on responsive view.
+- Configure and install SSL successfully with the domain.
+- Working on performance optimization. (In progress)
+
+**Encountered Challenges:**
+
+- No major issues were encountered today.
+
+**Next Steps:**
+
+- Working on remaining task.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-04-18</td><td>8</td><td>complete</td><td>**Achievements:**
+
+- Update and modify homepage.
+- Added New sections in homepage.
+- Update Shop page layout
+- Fixed form issue.
+- Upload and modify products.
+- Fixed dns and hosting issue.
+- Install wordpress and deploy the project from localhost to Live server.
+
+**Encountered Challenges:**
+
+- Encountered multiple issue when try to fix the dns and hosting issue. also face size limitation issue when try to Deploy the project in the wp dashboard.
+
+**Next Steps:**
+
+- Working on responsive view.
+- Fixed issues if there any issue comes up.
+- Improve based on instruction.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-04-17</td><td>8.5</td><td>complete</td><td>1. Create custom footer 2. Added Product 3. Added product attributes. 4. Added product variations with different size and quantity.  5. Added variable products and upload all the provided products in the xl file.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-04-16</td><td>7.5</td><td>complete</td><td>1. Develop new sections in homepage. 2. Modify full homepage based on product categories. 3. Added single products 4. Design and Develop full contact page.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-04-15</td><td>8</td><td>complete</td><td>1. Upload Products 2.Modify Homepage 3.Added Multi language functions 4. Modify sections based on product categories</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-28</td><td>5</td><td>in progress</td><td>When attempting to download project files from cPanel, the download process encounters significant slowdowns, resulting in incomplete downloads. However, the database downloads without issues. Subsequent attempts to download the files from cPanel also fail to complete.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-26</td><td>6.5</td><td>complete</td><td>To address the NXDOMAIN issue and resolve the subsequent error encountered when visiting the site, which results in a blank screen, follow these steps to troubleshoot and rectify the problem.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-26</td><td>7</td><td>in progress</td><td>Trying to solve the dns problem. Try multiple way to solve the problem. 1. Check the domain spelling 2. Clear DNS cache 3. Check DNS settings 4. Try a different device or network . 5. Browser cache clean</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-25</td><td>6.5</td><td>in progress</td><td>1. Implement sending emails individually when multiple email addresses are selected in the email route. 2. The Plainclay website is experiencing issues with the DNS server. attempted to resolve this problem using multiple methods, but the error persists and has not been resolved yet.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-18</td><td>7.5</td><td>complete</td><td>Handle login and registration. Only registered user able to purchase the product. and enable force authentication before checkout. Modified and fixed some issues in the APP.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-15</td><td>6.5</td><td>complete</td><td>Resolved responsive issues throughout the app and fixed conflicts in the footer, which were conflicting with dashboard items.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-14</td><td>8</td><td>complete</td><td>Added custom footer. Added content, contact form and map in the contact page. fixed some dashboard issue in multiple nested route.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-13</td><td>7</td><td>complete</td><td>Communicate with the client and Fixed the domain blocked issue. Woking with the Homepage modification. Create multiple new sections in homepage.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-12</td><td>5.5</td><td>in progress</td><td>Domain Block Cannot Access To Perform Modifications In The App. Consider Watching Some WooCommerce Tutorials.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-11</td><td>5</td><td>in progress</td><td>Domain block cannot access to perform modifications in the App. Consider watching some WooCommerce tutorials.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-08</td><td>7.5</td><td>complete</td><td>Working on home added new sections. Modify shop page , Modify mini cart, Customize woocommerce for calculate tax and delivery charge based on the product delivery address. Added confimation email with the purchase history. End of the day domain blocked now needs to verify the domain through email.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-07</td><td>8</td><td>complete</td><td>Working on homepage carousel sections and modify and improve home UI, Added Footer, Added language switcher, Added some products, Added Blogs, Order a product, Track Order using OrderID and Email. Process Order status through Woocommerce order tab.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-06</td><td>8.5</td><td>complete</td><td>Working on homepage multiple sections, Added Menu, Modify Header, Show Featured and lastest product on Homepage, Modify shop page layout added filter system by price color and size, Added search, Added product catagories and tags, Modify product details page, create Track order and Blog and Contact page an working on it</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-05</td><td>8.5</td><td>complete</td><td>Remove unnecessary elements from the dashboard, installed essential themes and plugins, created required pages, configured WooCommerce settings, collected images for product creation, and generated both simple and variable products. Develop homepage multiple section.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td>Progress Report</td><td>2024-03-04</td><td>7.5</td><td>complete</td><td>Analysis requiments and get access and successfully established a connection between the domain and hosting. I installed WordPress on the domain through cPanel.</td><td>Md. Samiul Ahmed</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td>144.5</td></tr>
+      </tbody>
+    </table>
+  
+  </body>
+</html >
