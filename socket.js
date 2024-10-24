@@ -2,7 +2,6 @@
 import dotenv from "dotenv";
 import { MongoClient, ObjectId } from "mongodb";
 import { Server as SocketIOServer } from "socket.io";
-
 dotenv.config();
 
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clusterunidevgo.2nk4dzo.mongodb.net/?retryWrites=true`;
@@ -19,12 +18,11 @@ const setupSocket = async (server) => {
     return;
   }
 
-  // Set CORS options
   const io = new SocketIOServer(server, {
     cors: {
-      origin: process.env.ORIGIN, // Set to your client app URL (e.g., http://localhost:5173 for local)
+      origin: process.env.ORIGIN,
       methods: ["GET", "POST"],
-      credentials: true, // Allow credentials
+      credentials: true,
     },
   });
 

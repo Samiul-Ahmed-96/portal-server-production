@@ -3,17 +3,21 @@ import { ObjectId } from "mongodb";
 // Function to handle file upload
 export const uploadFileAndSaveMessage = async (req, res) => {
   try {
-    const fileUrl = `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`;
+    const fileUrl = `${req.protocol}://${req.get("host")}/uploads/${
+      req.file.filename
+    }`;
     const message = JSON.parse(req.body.message);
 
     const newMessage = {
       ...message,
-      fileUrl,  // Add the file URL to the message
+      fileUrl, // Add the file URL to the message
     };
 
     const messagesCollection = req.app.locals.db.collection("chat-management");
     const result = await messagesCollection.insertOne(newMessage);
-    const savedMessage = await messagesCollection.findOne({ _id: result.insertedId });
+    const savedMessage = await messagesCollection.findOne({
+      _id: result.insertedId,
+    });
 
     res.json(savedMessage);
   } catch (error) {

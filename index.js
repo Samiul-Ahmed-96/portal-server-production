@@ -45,10 +45,12 @@ const upload = multer({ storage });
 
 // Middlewares
 
-app.use(cors({
-  origin: process.env.ORIGIN || "*", // Fallback to "*" for testing
-  credentials: true, 
-}));
+app.use(
+  cors({
+    origin: process.env.ORIGIN || "*", 
+    credentials: true,
+  })
+);
 
 app.use(bodyParser.json());
 app.use(express.json());

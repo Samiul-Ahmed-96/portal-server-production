@@ -74,16 +74,19 @@ export const deleteAttendanceById = async (req, res) => {
   res.send({ status: true, data: result });
 };
 
-
 // Get attendance by email
 export const getAttendanceByEmail = async (req, res) => {
   const email = req.params.email;
-  const attendanceCollection = req.app.locals.db.collection("attendence-management");
+  const attendanceCollection = req.app.locals.db.collection(
+    "attendence-management"
+  );
 
   console.log("Email received:", email);
 
-  if (!email || typeof email !== 'string') {
-    return res.status(400).send({ status: false, message: "Invalid email parameter" });
+  if (!email || typeof email !== "string") {
+    return res
+      .status(400)
+      .send({ status: false, message: "Invalid email parameter" });
   }
 
   try {
@@ -93,10 +96,15 @@ export const getAttendanceByEmail = async (req, res) => {
     if (result.length > 0) {
       return res.send({ status: true, data: result });
     } else {
-      return res.send({ status: false, message: "No records found for this email" });
+      return res.send({
+        status: false,
+        message: "No records found for this email",
+      });
     }
   } catch (error) {
     console.error("Error fetching attendance by email:", error);
-    return res.status(500).send({ status: false, message: "Internal server error" });
+    return res
+      .status(500)
+      .send({ status: false, message: "Internal server error" });
   }
 };
